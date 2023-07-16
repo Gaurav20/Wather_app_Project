@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="rev"></h1>
+    <button onclick="getDate()">Date</button>
+    <button onclick="year()">Year</button>
+    <button onclick="hrs()">Hrse</button>
+</body>
+<script>
+    var date= new Date();
+    function getDate()
+    {
+        document.getElementById("rev").innerText=date;
+    }
+    function hrs()
+    {
+        document.getElementById("rev").innerText=date.getHours();
+    }
+
+</script>
+</html>
